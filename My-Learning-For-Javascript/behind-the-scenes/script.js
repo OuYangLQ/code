@@ -111,6 +111,7 @@ const f = jonas.calcAge;
 f();
 */
 
+/*
 // Creating a prop in Window Object
 var firstName = 'Matilda';
 
@@ -166,3 +167,54 @@ var addArrow = (a, b) => {
 };
 
 addArrow();
+*/
+
+/*
+let age = 30;
+console.log(age);
+let oldAge = age;
+age = 31;
+console.log(age);
+console.log(oldAge);
+
+const me = { name: 'Jonas', age: 30 };
+
+const friend = me;
+
+friend.age = 27;
+console.log('Friend:', friend);
+console.log('Me:', me);
+*/
+
+let lastName = 'Williams';
+let firstName = lastName;
+lastName = 'Davis';
+console.log(lastName, firstName);
+
+const jessica = {
+  firstName: 'Jeccica',
+  lastName: 'Williams',
+  age: 27,
+};
+const marriedJaccica = jessica;
+marriedJaccica.lastName = 'Davis';
+console.log('Before marriage:', jessica);
+console.log('After marriage:', marriedJaccica);
+
+const jessica2 = {
+  firstName: 'Jeccica',
+  lastName: 'Williams',
+  age: 27,
+  famliy: ['Alice', 'Bob'],
+};
+
+const marriedJaccica2 = Object.assign({}, jessica2);
+marriedJaccica2.lastName = 'Daves';
+console.log('Before marriage:', jessica2);
+console.log('After marriage:', marriedJaccica2);
+
+marriedJaccica2.famliy.push('Mary');
+marriedJaccica2.famliy.push('John');
+
+console.log('Before marriage:', jessica2);
+console.log('After marriage:', marriedJaccica2);
